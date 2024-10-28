@@ -6,14 +6,15 @@ using namespace std;
 class Listing{
 private: 
     string address;
-    int bedrooms;
+    float bedrooms;
     float rent;
     string info;
 public:
     Listing();
-    Listing(string address, int bedrooms, float rent, string info);
+    Listing(string address, float bedrooms, float rent, string info);
     //write getters and setters and print
     void display();
+    float getRent() const { return rent; }
 };
 
 

@@ -9,7 +9,7 @@ Listing::Listing(){
     rent = 0;
     info = "";
 }
-Listing::Listing(string address, int bedrooms, float rent, string info) {
+Listing::Listing(string address, float bedrooms, float rent, string info) {
     this->address = address;
     this->bedrooms = bedrooms;
     this->info = info;
@@ -17,7 +17,7 @@ Listing::Listing(string address, int bedrooms, float rent, string info) {
 }
 void Listing::display() {
     cout << address << endl;
-    cout << rent << endl;
+    cout << "Rent: $" << rent << endl;
     cout << "Bedrooms: " << bedrooms << endl;
-    cout << info;
+    cout << info << endl;
 }
